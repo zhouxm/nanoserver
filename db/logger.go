@@ -1,8 +1,8 @@
 package db
 
 import (
-	"github.com/go-xorm/core"
 	log "github.com/sirupsen/logrus"
+	"xorm.io/core"
 )
 
 type Logger struct {

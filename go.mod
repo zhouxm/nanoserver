@@ -1,39 +1,48 @@
 module github.com/lonng/nanoserver
 
-replace (
-	golang.org/x/crypto => github.com/golang/crypto v0.0.0-20181001203147-e3636079e1a4
-	golang.org/x/net => github.com/golang/net v0.0.0-20180926154720-4dfa2610cdf3
-	golang.org/x/sys => github.com/golang/sys v0.0.0-20180928133829-e4b3c5e90611
-	golang.org/x/text => github.com/golang/text v0.3.0
+go 1.26
+
+require (
+	github.com/go-sql-driver/mysql v1.4.1
+	github.com/gorilla/mux v1.6.2
+	github.com/lonng/nano v0.4.0
+	github.com/lonng/nex v1.4.1
+	github.com/pborman/uuid v1.2.1
+	github.com/pkg/errors v0.8.0
+	github.com/sirupsen/logrus v1.2.0
+	github.com/spf13/viper v1.5.0
+	github.com/urfave/cli v1.22.2
+	github.com/xxtea/xxtea-go v1.0.0
+	golang.org/x/crypto v0.0.0-20190325154230-a5d413f7728c
+	golang.org/x/net v0.0.0-20190522155817-f3200d17e092
+	golang.org/x/text v0.3.1-0.20180807135948-17ff2d5776d2
+	gopkg.in/chanxuehong/wechat.v2 v2.0.0-20190402080805-fa408c6cc20d
+	xorm.io/core v0.7.2
+	xorm.io/xorm v0.8.0
 )
 
 require (
-	cloud.google.com/go v0.28.0 // indirect
-	github.com/BurntSushi/toml v0.3.1 // indirect
-	github.com/chanxuehong/rand v0.0.0-20180830053958-4b3aff17f488 // indirect
-	github.com/denisenkom/go-mssqldb v0.0.0-20180901172138-1eb28afdf9b6 // indirect
-	github.com/go-sql-driver/mysql v1.4.0
-	github.com/go-xorm/core v0.6.0
-	github.com/go-xorm/xorm v0.7.0
-	github.com/google/go-cmp v0.2.0 // indirect
+	github.com/chanxuehong/rand v0.0.0-20211009035549-2f07823e8e99 // indirect
+	github.com/cpuguy83/go-md2man/v2 v2.0.0-20190314233015-f79a8a8ca69d // indirect
+	github.com/fsnotify/fsnotify v1.4.7 // indirect
+	github.com/golang/protobuf v1.3.1 // indirect
+	github.com/google/uuid v1.0.0 // indirect
 	github.com/gorilla/context v1.1.1 // indirect
-	github.com/gorilla/mux v1.6.2
 	github.com/gorilla/websocket v1.4.0 // indirect
-	github.com/lib/pq v1.0.0 // indirect
-	github.com/lonng/nano v0.4.0
-	github.com/lonng/nex v1.4.1
-	github.com/mattn/go-sqlite3 v1.9.0 // indirect
-	github.com/pborman/uuid v1.2.0
-	github.com/pkg/errors v0.8.0
-	github.com/sirupsen/logrus v1.1.0
-	github.com/spf13/viper v1.2.1
-	github.com/urfave/cli v1.20.0
-	github.com/xxtea/xxtea-go v0.0.0-20170828040851-35c4b17eecf6
-	github.com/ziutek/mymysql v1.5.4 // indirect
-	golang.org/x/crypto v0.0.0-20180904163835-0709b304e793
-	golang.org/x/net v0.0.0-20180926154720-4dfa2610cdf3
-	golang.org/x/sync v0.0.0-20180314180146-1d60e4601c6f // indirect
-	golang.org/x/text v0.3.0
-	google.golang.org/appengine v1.2.0 // indirect
-	gopkg.in/chanxuehong/wechat.v2 v2.0.0-20180924084534-7e0579cb5377
+	github.com/hashicorp/hcl v1.0.0 // indirect
+	github.com/konsorten/go-windows-terminal-sequences v1.0.1 // indirect
+	github.com/magiconair/properties v1.8.1 // indirect
+	github.com/mitchellh/mapstructure v1.1.2 // indirect
+	github.com/pelletier/go-toml v1.2.0 // indirect
+	github.com/russross/blackfriday/v2 v2.0.1 // indirect
+	github.com/shurcooL/sanitized_anchor_name v1.0.0 // indirect
+	github.com/spf13/afero v1.1.2 // indirect
+	github.com/spf13/cast v1.3.0 // indirect
+	github.com/spf13/jwalterweatherman v1.0.0 // indirect
+	github.com/spf13/pflag v1.0.3 // indirect
+	github.com/subosito/gotenv v1.2.0 // indirect
+	golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a // indirect
+	google.golang.org/appengine v1.6.0 // indirect
+	gopkg.in/yaml.v2 v2.2.4 // indirect
+	xorm.io/builder v0.3.6 // indirect
 )
