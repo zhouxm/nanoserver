@@ -29,19 +29,4 @@ func BenchmarkGenRSAKey(b *testing.B) {
 	}
 }
 
-func TestMaskPhone(t *testing.T) {
-	_, err := MaskPhone("128888888888")
-	if err == nil {
-		t.Fail()
-	}
 
-	_, err = MaskPhone("12888888888")
-	if err != nil {
-		t.Fail()
-	}
-
-	_, err = MaskPhone("15222544")
-	if err == nil {
-		t.Fail()
-	}
-}

@@ -2,3 +2,4 @@
 .idea
 dist/
 cmd/kwxd/configs/config.local.toml
+mahjong

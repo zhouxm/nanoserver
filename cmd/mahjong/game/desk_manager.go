@@ -77,7 +77,7 @@ func (manager *DeskManager) AfterInit() {
 		// Fixed: 玩家WIFI切换到4G网络不断开, 重连时，将UID设置为illegalSessionUid
 		if s.UID() > 0 {
 			if err := manager.onPlayerDisconnect(s); err != nil {
-				logger.Errorf("玩家退出: UID=%d, Error=%s", s.UID, err.Error())
+				logger.Errorf("玩家退出: UID=%d, Error=%s", s.UID(), err.Error())
 			}
 		}
 	})

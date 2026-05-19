@@ -5,35 +5,6 @@ import (
 	"testing"
 )
 
-func _TestBase_CanWinBySelfDrawing(t *testing.T) {
-	t.SkipNow()
-	tables := []int{4, 6, 15, 15, 7, 4, 7, 6, 17, 17, 18, 18, 16, 16}
-
-	if CanZimo(tables) != true {
-		t.FailNow()
-	}
-}
-
-func _TestBase_CanWinByOtherDiscard(t *testing.T) {
-	t.SkipNow()
-
-	onHand := []int{5, 15, 6, 2, 12, 16, 14, 3, 7, 3, 1, 3, 12}
-	discard := 3
-
-	if !CanHu(onHand, discard) {
-		t.FailNow()
-	}
-}
-
-func _TestBase_IsReadyTiles(t *testing.T) {
-	t.SkipNow()
-	row := []int{16, 4, 17, 4, 17, 3, 3, 17, 16, 16}
-
-	if !IsTing(row) {
-		t.FailNow()
-	}
-}
-
 func _TestBase_Tings(t *testing.T) {
 	//origin := []int {5, 6, 14, 8, 16, 15, 3, 15, 13, 4, 18, 17, 15, 15}
 

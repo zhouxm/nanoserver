@@ -1560,7 +1560,7 @@ func (d *Desk) maxScoreCutter(point int) int {
 
 func (d *Desk) scoreChangeForHu(winner *Player, losers []Loser, tileID int, huType protocol.HuPaiType) {
 	for _, l := range losers {
-		d.logger.Debugf("scoreChangeForHu 赢家=%d 输家=%d 分值=%d 类型=%d 牌=%s",
+		d.logger.Debugf("scoreChangeForHu 赢家=%d 输家=%d 分值=%d 类型=%d 牌=%d",
 			winner.Uid(), l.uid, l.score, huType, mahjong.IndexFromID(tileID))
 	}
 
